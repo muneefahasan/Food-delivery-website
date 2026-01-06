@@ -1,8 +1,10 @@
 import React from 'react';
 const Menu = () => {
   return (
-    <div >  Menu </div>
-    );  
-}   
+    <>
+      <Navbar />
+    </>
+  )
+}
 
 export default Menu;

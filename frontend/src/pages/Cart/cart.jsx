@@ -1,8 +1,11 @@
 import React from 'react';
-const cart = () => {
+const Cart = () => {
   return (
-    <div > Cart</div>
-    );  
+    <>
+      <Navbar />
+    </>
+  )
 }
+
 
 export default Cart;
