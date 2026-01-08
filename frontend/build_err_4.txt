@@ -1,0 +1,28 @@
+
+> frontend@0.0.0 build
+> vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 548 modules transformed.
+[31mx[39m Build failed in 1.60s
+[31merror during build:
+[31msrc/components/SpecialOffer/SpecialOffer.jsx (2:9): "cardData" is not exported by "src/assets/dummydata.js", imported by "src/components/SpecialOffer/SpecialOffer.jsx".[31m
+file: [36mC:/Users/USER/Desktop/Food delivery website/frontend/src/components/SpecialOffer/SpecialOffer.jsx:2:9[31m
+[33m
+1: import React, { useState } from 'react';
+2: import { cardData, additionalData } from '../../assets/dummydata';
+            ^
+3: import { useCart } from '../../CartContext/CartContext';
+4: import { FaStar, FaHeart, FaFire, FaPlus } from 'react-icons/fa';
+[31m
+    at getRollupError (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+    at error (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+    at Module.error (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/rollup/dist/es/shared/node-entry.js:16956:16)
+    at Module.traceVariable (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/rollup/dist/es/shared/node-entry.js:17412:29)
+    at ModuleScope.findVariable (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/rollup/dist/es/shared/node-entry.js:15076:39)
+    at ReturnValueScope.findVariable (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5649:38)
+    at FunctionBodyScope.findVariable (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5649:38)
+    at Identifier.bind (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5423:40)
+    at SpreadElement.bind (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/rollup/dist/es/shared/node-entry.js:2813:23)
+    at ArrayExpression.bind (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/rollup/dist/es/shared/node-entry.js:2809:28)[39m

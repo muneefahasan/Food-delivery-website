@@ -1,0 +1,17 @@
+
+> frontend@0.0.0 build
+> vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 50 modules transformed.
+[31mx[39m Build failed in 720ms
+[31merror during build:
+[31m[@tailwindcss/vite:generate:build] Missing closing } at 0%[31m
+file: [36mC:/Users/USER/Desktop/Food delivery website/frontend/src/components/OurMenu/OurMenu.css[31m
+    at Ce (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/tailwindcss/dist/chunk-MEY3PWYT.mjs:1:3180)
+    at Hu (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/tailwindcss/dist/chunk-MEY3PWYT.mjs:38:1384)
+    at nu (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/@tailwindcss/node/dist/index.mjs:10:3439)
+    at D.generate (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/@tailwindcss/vite/dist/index.mjs:1:3691)
+    at Object.transform (file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/@tailwindcss/vite/dist/index.mjs:1:2455)
+    at file:///C:/Users/USER/Desktop/Food%20delivery%20website/frontend/node_modules/rollup/dist/es/shared/node-entry.js:22451:40[39m

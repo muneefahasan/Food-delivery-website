@@ -57,108 +57,48 @@ export const stats = [
         number: '10M+',
         label: 'Deliveries',
         icon: GiFoodTruck,
-        gradient: 'from-amber-500 via-orange-400 to-yellow-600',
+        gradient: 'from-purple-500 via-fuchsia-400 to-indigo-600',
     },
     {
         number: '98%',
         label: 'Satisfaction',
         icon: FaHeart,
-        gradient: 'from-rose-500 via-amber-500 to-yellow-500',
+        gradient: 'from-purple-500 via-violet-500 to-indigo-500',
     },
     {
         number: '500+',
         label: 'Cities',
         icon: FaLeaf,
-        gradient: 'from-emerald-500 via-amber-500 to-yellow-600',
+        gradient: 'from-emerald-500 via-purple-500 to-indigo-600', // Kept emerald for leaf
     },
     {
         number: '24/7',
         label: 'Support',
         icon: FaRegClock,
-        gradient: 'from-amber-500 via-orange-400 to-rose-500',
+        gradient: 'from-purple-500 via-fuchsia-400 to-pink-500',
     },
 ];
 
-export const teamMembers = [
-    {
-        name: "Marco Yansen",
-        role: "Executive Chef",
-        img: IA4,
-        bio: "3 Michelin stars | Italian cuisine specialist",
-        delay: 0.1,
-        social: {
-            twitter: "https://x.com/?lang=en",
-            instagram: "https://www.instagram.com/",
-            facebook: "https://www.facebook.com/",
-            linkedin: "https://www.linkedin.com/",
-        },
-    },
-    {
-        name: "Amit Singh",
-        role: "Pastry Chef",
-        img: IA5,
-        bio: "World Baking Champion | French desserts expert",
-        delay: 0.3,
-        social: {
-            twitter: "https://x.com/?lang=en",
-            instagram: "https://www.instagram.com/",
-            facebook: "https://www.facebook.com/",
-            linkedin: "https://www.linkedin.com/",
-        },
-    },
-    {
-        name: "Akash Trivedi",
-        role: "Sushi Chef",
-        img: IA6,
-        bio: "5th generation sushi chef | Traditional techniques",
-        delay: 0.5,
-        social: {
-            twitter: "https://x.com/?lang=en",
-            instagram: "https://www.instagram.com/",
-            facebook: "https://www.facebook.com/",
-            linkedin: "https://www.linkedin.com/",
-        },
-    },
-];
+// ...
 
 // ABOUT HOMEPAGE
 export const aboutfeature = [
-    { icon: FaBolt, title: "Instant Ordering", text: "Seamless digital experience", color: "from-amber-400 to-orange-500" },
-    { icon: FaRegClock, title: "Always Open", text: "24/7 premium service", color: "from-rose-400 to-pink-600" },
-    { icon: FaCalendarCheck, title: "Exclusive Booking", text: "Priority reservations", color: "from-emerald-400 to-cyan-600" },
-    { icon: FaFire, title: "Signature Dishes", text: "Chef's special creations", color: "from-purple-400 to-indigo-600" }
+    { icon: FaBolt, title: "Instant Ordering", text: "Seamless digital experience", color: "from-purple-400 to-indigo-500" },
+    { icon: FaRegClock, title: "Always Open", text: "24/7 premium service", color: "from-purple-400 to-pink-600" },
+    { icon: FaCalendarCheck, title: "Exclusive Booking", text: "Priority reservations", color: "from-violet-400 to-cyan-600" },
+    { icon: FaFire, title: "Signature Dishes", text: "Chef's special creations", color: "from-fuchsia-400 to-purple-600" }
 ];
 
 // SPECIAL OFFER
 export const commonTransition = "transition-all duration-300";
-export const addButtonBase = "flex items-center gap-2 bg-gradient-to-r from-red-600 to-amber-600 text-white px-5 py-2.5 rounded-xl font-bold border-2 border-amber-400/30";
-export const addButtonHover = "hover:gap-3 hover:shadow-lg hover:shadow-amber-500/30 active:scale-95 relative overflow-hidden";
+export const addButtonBase = "flex items-center gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-5 py-2.5 rounded-xl font-bold border-2 border-purple-400/30";
+export const addButtonHover = "hover:gap-3 hover:shadow-lg hover:shadow-purple-500/30 active:scale-95 relative overflow-hidden";
 
-// SPECIAL MENU
-export const cardData = [
-    { id: 1, title: 'Kebab', rating: 4.5, hearts: 105, description: 'Juicy grilled meat with authentic spices', image: Kebab, popular: true, price: '₹40' },
-    { id: 2, title: 'Chicken Tikka', rating: 5.0, hearts: 155, description: 'Tender chicken marinated in sauce', image: ChickenTikka, bestseller: true, price: '₹140' },
-    { id: 3, title: 'Desi Chowmein', rating: 4.2, hearts: 85, description: 'Spicy Asian noodles with a local twist', image: DesiChowmein, price: '₹60' },
-    { id: 4, title: 'Chicken Chargha', rating: 4.8, hearts: 285, description: 'Crispy golden fried whole chicken', image: ChickenChargha, special: true, price: '₹200' },
-];
-export const additionalData = [
-    { id: 5, title: 'Paneer Tikka', rating: 4.8, hearts: 210, description: 'Cottage cheese marinated in spices', image: PaneerTikka, popular: true, price: '₹220' },
-    { id: 6, title: 'Masala Dosa', rating: 4.5, hearts: 165, description: 'Crispy rice crepe with potato filling', image: MasalaDosa, price: '₹180' },
-    { id: 7, title: 'Palak Paneer', rating: 4.7, hearts: 190, description: 'Spinach curry with cottage cheese', image: PalakPaneer, price: '₹200' },
-    { id: 8, title: 'Gulab Jamun', rating: 4.9, hearts: 275, description: 'Golden dumplings in rose syrup', image: GulabJamun, special: true, price: '₹30' },
-];
-
-// FOOTER 
-export const socialIcons = [
-    { icon: FaFacebook, link: 'https://www.facebook.com/share/1DjbwhdR4z/', color: '#3b5998', label: 'Facebook' },
-    { icon: FaInstagram, link: 'https://www.instagram.com/hexagondigitalservices?igsh=MW1nanQ2eXIycnRkZQ==', color: '#E1306C', label: 'Instagram' },
-    { icon: FaXTwitter, link: 'https://x.com/HexagonDService?t=Vv5ReZAIbXONqkq_O0ksWQ&s=09', color: '#000', label: 'X' },
-    { icon: FaYoutube, link: 'https://youtube.com/@hexagondigitalservices?si=UnBt0AHI-ChN5Mze', color: '#FF0000', label: 'Youtube' },
-];
+// ...
 
 // LOGIN 
-export const inputBase = "w-full rounded-lg bg-[#2D1B0E] text-amber-100 placeholder-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-600";
-export const iconClass = "absolute top-1/2 transform -translate-y-1/2 left-3 text-amber-400";
+export const inputBase = "w-full rounded-lg bg-gray-800 text-purple-100 placeholder-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-600";
+export const iconClass = "absolute top-1/2 transform -translate-y-1/2 left-3 text-purple-400";
 
 // CONTACT
 export const contactFormFields = [
@@ -175,3 +115,28 @@ export const bannerAssets = {
     orbitImages: [Image1, Image2, Image3, Image4],
     video: Video,
 };
+
+export const cardData = [
+    { id: 1, image: Kebab, title: "Succulent Kebab", description: "Grilled perfection with spices", price: "₹250", rating: "4.8", hearts: "1.2k" },
+    { id: 2, image: ChickenTikka, title: "Chicken Tikka", description: "Spicy and tender chicken chunks", price: "₹300", rating: "4.9", hearts: "2k" },
+    { id: 3, image: ChickenChargha, title: "Chicken Chargha", description: "Whole chicken fried to perfection", price: "₹500", rating: "4.7", hearts: "900" },
+    { id: 4, image: DesiChowmein, title: "Desi Chowmein", description: "Noodles with a desi twist", price: "₹150", rating: "4.5", hearts: "1.5k" },
+];
+
+export const additionalData = [
+    { id: 5, image: GulabJamun, title: "Gulab Jamun", description: "Sweet delight", price: "₹100", rating: "4.9", hearts: "3k" },
+    { id: 6, image: MasalaDosa, title: "Masala Dosa", description: "Crispy crepe with potato filling", price: "₹120", rating: "4.6", hearts: "1k" },
+    { id: 7, image: PaneerTikka, title: "Paneer Tikka", description: "Cottage cheese grilled with love", price: "₹280", rating: "4.8", hearts: "1.8k" },
+    { id: 8, image: PalakPaneer, title: "Palak Paneer", description: "Spinach goodness with paneer", price: "₹220", rating: "4.7", hearts: "1.1k" },
+];
+
+export const teamMembers = [
+    { name: "Vikram Singh", role: "Sous Chef", bio: "Merging traditional flavors with modern techniques", img: IA6, social: { twitter: '#', instagram: '#', facebook: '#', linkedin: '#' }, delay: 0.6 },
+];
+
+export const socialIcons = [
+    { icon: FaFacebook },
+    { icon: FaInstagram },
+    { icon: FaXTwitter },
+    { icon: FaYoutube },
+];

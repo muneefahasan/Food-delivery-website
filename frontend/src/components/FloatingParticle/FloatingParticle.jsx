@@ -2,29 +2,36 @@ import React from 'react';
 
 const FloatingParticle = ({ count = 40 }) => {
 
-    const particle = Array.from({ length: count }() => ({
+    const particle = Array.from({ length: count }, () => ({
         top: Math.random() * 100,
         left: Math.random() * 100,
         //size: Math.random() * 4 + 1,
         // delay: Math.random() * 5,
         duration: Math.random() * 2 + 2,
-    }))
+    }));
 
-return (
-    <div className=' absolute inset-0 overflow-hidden pointer-events-none'>
-        {particle.map(p, i) => (
-        <div key={i} className='absolute w-1 h-1 bg-amber-400/40 rounded-full'
-            style={{
-                top: '$(p.top}%', left: '${p.left}%'
-            animation: 'float ${p.duration}s infinite'
-
-            }}>
+    return (
+        <div className='absolute inset-0 overflow-hidden pointer-events-none'>
+            {particle.map((p, i) => (
+                <div key={i} className='absolute w-1 h-1 bg-purple-400/40 rounded-full'
+                    style={{
+                        top: `${p.top}%`,
+                        left: `${p.left}%`,
+                        animation: `float ${p.duration}s infinite`
+                    }}>
+                </div>
+            ))}
+            <style>
+                {`
+                    @keyframes float {
+                        0% { transform: translateY(0); opacity: 0; }
+                        50% { opacity: 1; }
+                        100% { transform: translateY(-20px); opacity: 0; }
+                    }
+                `}
+            </style>
         </div>
-
-        ))}
-
-    </div>
-)
+    )
 }
 
-export default FloatingParticle
+export default FloatingParticle;
